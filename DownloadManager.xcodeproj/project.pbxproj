@@ -36,6 +36,15 @@
 		0775100918C617A800A7754B /* DownloadManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0775100818C617A800A7754B /* DownloadManagerTests.m */; };
 		07ED116418C666360015ACCA /* IADownloadManager+TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED116318C666360015ACCA /* IADownloadManager+TestHelper.m */; };
 		5E477E43539D42658B9AFF41 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F3650686854467B79268BA /* libPods.a */; };
+		613E5C3918ED595F0046103A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076910D317ABDE5B00439E30 /* Foundation.framework */; };
+		613E5C3E18ED595F0046103A /* libDownloadManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 613E5C3D18ED595F0046103A /* libDownloadManager.h */; };
+		613E5C4018ED595F0046103A /* libDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 613E5C3F18ED595F0046103A /* libDownloadManager.m */; };
+		613E5C4618ED595F0046103A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07750FFE18C617A800A7754B /* XCTest.framework */; };
+		613E5C4718ED595F0046103A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076910D317ABDE5B00439E30 /* Foundation.framework */; };
+		613E5C4818ED595F0046103A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 076910D117ABDE5B00439E30 /* UIKit.framework */; };
+		613E5C4B18ED595F0046103A /* liblibDownloadManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 613E5C3818ED595F0046103A /* liblibDownloadManager.a */; };
+		613E5C5118ED595F0046103A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 613E5C4F18ED595F0046103A /* InfoPlist.strings */; };
+		613E5C5318ED595F0046103A /* libDownloadManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 613E5C5218ED595F0046103A /* libDownloadManagerTests.m */; };
 		A5869823F09B41B7B6216966 /* libPods-DownloadManagerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 756BD6ACC37D478B9A09C9CB /* libPods-DownloadManagerTests.a */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +56,27 @@
 			remoteGlobalIDString = 076910CD17ABDE5A00439E30;
 			remoteInfo = DownloadManager;
 		};
+		613E5C4918ED595F0046103A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 076910C617ABDE5A00439E30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 613E5C3718ED595F0046103A;
+			remoteInfo = libDownloadManager;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		613E5C3618ED595F0046103A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				613E5C3E18ED595F0046103A /* libDownloadManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0712337F17BACE4C00808C6A /* IACacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IACacheManager.h; sourceTree = "<group>"; };
@@ -92,6 +121,14 @@
 		0775100A18C617A800A7754B /* DownloadManagerTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DownloadManagerTests-Prefix.pch"; sourceTree = "<group>"; };
 		07ED116218C666360015ACCA /* IADownloadManager+TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IADownloadManager+TestHelper.h"; sourceTree = "<group>"; };
 		07ED116318C666360015ACCA /* IADownloadManager+TestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IADownloadManager+TestHelper.m"; sourceTree = "<group>"; };
+		613E5C3818ED595F0046103A /* liblibDownloadManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibDownloadManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		613E5C3C18ED595F0046103A /* libDownloadManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libDownloadManager-Prefix.pch"; sourceTree = "<group>"; };
+		613E5C3D18ED595F0046103A /* libDownloadManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libDownloadManager.h; sourceTree = "<group>"; };
+		613E5C3F18ED595F0046103A /* libDownloadManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libDownloadManager.m; sourceTree = "<group>"; };
+		613E5C4518ED595F0046103A /* libDownloadManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libDownloadManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		613E5C4E18ED595F0046103A /* libDownloadManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libDownloadManagerTests-Info.plist"; sourceTree = "<group>"; };
+		613E5C5018ED595F0046103A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		613E5C5218ED595F0046103A /* libDownloadManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libDownloadManagerTests.m; sourceTree = "<group>"; };
 		756BD6ACC37D478B9A09C9CB /* libPods-DownloadManagerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DownloadManagerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6957401EDE34E4685F72289 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		C434396CBBA644199F1A57D7 /* Pods-DownloadManagerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DownloadManagerTests.xcconfig"; path = "Pods/Pods-DownloadManagerTests.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +161,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		613E5C3518ED595F0046103A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613E5C3918ED595F0046103A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613E5C4218ED595F0046103A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613E5C4618ED595F0046103A /* XCTest.framework in Frameworks */,
+				613E5C4818ED595F0046103A /* UIKit.framework in Frameworks */,
+				613E5C4718ED595F0046103A /* Foundation.framework in Frameworks */,
+				613E5C4B18ED595F0046103A /* liblibDownloadManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -152,6 +208,8 @@
 				0712337E17BACE4C00808C6A /* IADownloadManager */,
 				076910D717ABDE5B00439E30 /* DownloadManager */,
 				0775100218C617A800A7754B /* DownloadManagerTests */,
+				613E5C3A18ED595F0046103A /* libDownloadManager */,
+				613E5C4C18ED595F0046103A /* libDownloadManagerTests */,
 				076910D017ABDE5B00439E30 /* Frameworks */,
 				076910CF17ABDE5B00439E30 /* Products */,
 				07750FF718C616CB00A7754B /* Podfile */,
@@ -165,6 +223,8 @@
 			children = (
 				076910CE17ABDE5B00439E30 /* DownloadManager.app */,
 				07750FFD18C617A800A7754B /* DownloadManagerTests.xctest */,
+				613E5C3818ED595F0046103A /* liblibDownloadManager.a */,
+				613E5C4518ED595F0046103A /* libDownloadManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,6 +295,42 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		613E5C3A18ED595F0046103A /* libDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				613E5C3D18ED595F0046103A /* libDownloadManager.h */,
+				613E5C3F18ED595F0046103A /* libDownloadManager.m */,
+				613E5C3B18ED595F0046103A /* Supporting Files */,
+			);
+			path = libDownloadManager;
+			sourceTree = "<group>";
+		};
+		613E5C3B18ED595F0046103A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				613E5C3C18ED595F0046103A /* libDownloadManager-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		613E5C4C18ED595F0046103A /* libDownloadManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				613E5C5218ED595F0046103A /* libDownloadManagerTests.m */,
+				613E5C4D18ED595F0046103A /* Supporting Files */,
+			);
+			path = libDownloadManagerTests;
+			sourceTree = "<group>";
+		};
+		613E5C4D18ED595F0046103A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				613E5C4E18ED595F0046103A /* libDownloadManagerTests-Info.plist */,
+				613E5C4F18ED595F0046103A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +373,41 @@
 			productReference = 07750FFD18C617A800A7754B /* DownloadManagerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		613E5C3718ED595F0046103A /* libDownloadManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613E5C5A18ED595F0046103A /* Build configuration list for PBXNativeTarget "libDownloadManager" */;
+			buildPhases = (
+				613E5C3418ED595F0046103A /* Sources */,
+				613E5C3518ED595F0046103A /* Frameworks */,
+				613E5C3618ED595F0046103A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libDownloadManager;
+			productName = libDownloadManager;
+			productReference = 613E5C3818ED595F0046103A /* liblibDownloadManager.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		613E5C4418ED595F0046103A /* libDownloadManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613E5C5B18ED595F0046103A /* Build configuration list for PBXNativeTarget "libDownloadManagerTests" */;
+			buildPhases = (
+				613E5C4118ED595F0046103A /* Sources */,
+				613E5C4218ED595F0046103A /* Frameworks */,
+				613E5C4318ED595F0046103A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				613E5C4A18ED595F0046103A /* PBXTargetDependency */,
+			);
+			name = libDownloadManagerTests;
+			productName = libDownloadManagerTests;
+			productReference = 613E5C4518ED595F0046103A /* libDownloadManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,6 +418,9 @@
 				ORGANIZATIONNAME = InfusionApps;
 				TargetAttributes = {
 					07750FFC18C617A800A7754B = {
+						TestTargetID = 076910CD17ABDE5A00439E30;
+					};
+					613E5C4418ED595F0046103A = {
 						TestTargetID = 076910CD17ABDE5A00439E30;
 					};
 				};
@@ -305,6 +439,8 @@
 			targets = (
 				076910CD17ABDE5A00439E30 /* DownloadManager */,
 				07750FFC18C617A800A7754B /* DownloadManagerTests */,
+				613E5C3718ED595F0046103A /* libDownloadManager */,
+				613E5C4418ED595F0046103A /* libDownloadManagerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,6 +464,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0775100718C617A800A7754B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613E5C4318ED595F0046103A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613E5C5118ED595F0046103A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +567,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		613E5C3418ED595F0046103A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613E5C4018ED595F0046103A /* libDownloadManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		613E5C4118ED595F0046103A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613E5C5318ED595F0046103A /* libDownloadManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -430,6 +590,11 @@
 			isa = PBXTargetDependency;
 			target = 076910CD17ABDE5A00439E30 /* DownloadManager */;
 			targetProxy = 0775100B18C617A900A7754B /* PBXContainerItemProxy */;
+		};
+		613E5C4A18ED595F0046103A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 613E5C3718ED595F0046103A /* libDownloadManager */;
+			targetProxy = 613E5C4918ED595F0046103A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -454,6 +619,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				0775100618C617A800A7754B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		613E5C4F18ED595F0046103A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				613E5C5018ED595F0046103A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -691,6 +864,168 @@
 			};
 			name = Testing;
 		};
+		613E5C5418ED595F0046103A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/libDownloadManager.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libDownloadManager/libDownloadManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		613E5C5518ED595F0046103A /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/libDownloadManager.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libDownloadManager/libDownloadManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Testing;
+		};
+		613E5C5618ED595F0046103A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/libDownloadManager.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libDownloadManager/libDownloadManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		613E5C5718ED595F0046103A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DownloadManager.app/DownloadManager";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libDownloadManager/libDownloadManager-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "libDownloadManagerTests/libDownloadManagerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		613E5C5818ED595F0046103A /* Testing */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DownloadManager.app/DownloadManager";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libDownloadManager/libDownloadManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "libDownloadManagerTests/libDownloadManagerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Testing;
+		};
+		613E5C5918ED595F0046103A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DownloadManager.app/DownloadManager";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libDownloadManager/libDownloadManager-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "libDownloadManagerTests/libDownloadManagerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -723,6 +1058,24 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		613E5C5A18ED595F0046103A /* Build configuration list for PBXNativeTarget "libDownloadManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613E5C5418ED595F0046103A /* Debug */,
+				613E5C5518ED595F0046103A /* Testing */,
+				613E5C5618ED595F0046103A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		613E5C5B18ED595F0046103A /* Build configuration list for PBXNativeTarget "libDownloadManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613E5C5718ED595F0046103A /* Debug */,
+				613E5C5818ED595F0046103A /* Testing */,
+				613E5C5918ED595F0046103A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
